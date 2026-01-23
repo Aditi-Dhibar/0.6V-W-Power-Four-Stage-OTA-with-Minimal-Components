@@ -1,105 +1,47 @@
-# 0.6V-W-Power-Four-Stage-OTA-with-Minimal-Components
-This repository presents the design and simulation of a 0.6 V, ultra-low power four-stage Operational Transconductance Amplifier (OTA) implemented in 65 nm CMOS technology. The design focuses on achieving stable operation at low supply voltage with minimal components while supporting a wide load range.  
-The project is implemented and simulated using Cadence Virtuoso, and performance is evaluated in terms of gain, phase margin, noise, CMRR, and PSRR.
+# 4-Stage Operational Transconductance Amplifier (OTA) Design – 0.6 µm CMOS
 
+This repository presents the design and analysis of a **4-stage Operational Transconductance Amplifier (OTA)** implemented using a **0.6 µm CMOS technology**. The project focuses on achieving high gain through multistage amplification while maintaining stability using frequency compensation techniques.
 
-This repository presents the design and simulation of a 0.6-V, ultra-low-power four-stage Operational Transconductance Amplifier (OTA) implemented in 65 nm CMOS technology.
-The design focuses on minimal component count, low supply voltage operation, and wide load range, making it suitable for low-power analog and mixed-signal applications.
+## Project Overview
+The objective of this project is to design a multi-stage OTA suitable for analog signal processing applications. The design includes transistor-level schematic implementation, compensation network design, and performance evaluation through simulation.
 
-🧠 Key Features
+The complete design flow was carried out using **Cadence Virtuoso**, following standard analog CMOS design practices.
 
-Supply Voltage: 0.6 V
+## Key Features
+- 4-stage OTA architecture for high DC gain
+- Designed in 0.6 µm CMOS technology
+- Frequency compensation using Miller compensation and RC network
+- Performance analysis including gain, phase margin, and stability
+- Schematic-level simulation and verification
 
-Ultra-low power operation (μW range)
+## Repository Contents
+- **0.6u_4_stage_OTA.docx**  
+  Detailed project report including:
+  - OTA architecture explanation
+  - Transistor sizing and design methodology
+  - Compensation technique description
+  - Simulation setup
+  - Performance results and analysis
 
-Four-stage OTA architecture
+## Design Methodology
+1. Selection of multi-stage OTA topology
+2. Biasing network design for proper operating regions
+3. Gain stage implementation
+4. Frequency compensation for stability
+5. Simulation-based verification and analysis
 
-Minimal transistor count (14 transistors)
+## Tools & Technology
+- Cadence Virtuoso
+- Analog CMOS Design
+- 0.6 µm CMOS Technology Node
 
-Wide load driving capability (100× load range)
+## Applications
+- Analog signal conditioning
+- Amplification stages in mixed-signal ICs
+- Educational and research purposes in analog VLSI design
 
-Designed and simulated in Cadence Virtuoso
+## Author
+**Aditi Dhibar**
 
-🏗️ Architecture
-
-Technology: 65 nm CMOS
-
-Number of Stages: 4
-
-Total Transistors: 14
-
-Reference Current: 180 nA
-
-Supply Voltage (VDD): 0.6 V
-
-🔬 Circuit Implementation
-
-The OTA circuit is implemented and verified using Cadence Virtuoso.
-Multi-stage gain is achieved using cascaded amplifier stages with frequency compensation to ensure stability.
-
-📊 Simulation Results
-🔹 Stage-Wise Gain
-
-1st Stage Gain: 31 dB
-
-2nd Stage Gain: 48 dB
-
-3rd Stage Gain: 54 dB
-
-🔹 Overall Performance
-
-DC Gain: 77.93 dB
-
-Unity Gain Frequency (UGF): 986.25 kHz
-
-Phase Margin: 31°
-
-PM = 180° − 149°
-
-🔹 Frequency Compensation (Peaking Compensation)
-
-𝑅a=400𝑘
-
-Ca=700fF
-
-
-📈 Additional Performance Metrics
-
-AC Common-Mode Gain
-
-Input-Referred Noise
-
-Output-Referred Noise
-
-Common-Mode Rejection Ratio (CMRR)
-
-Power Supply Rejection Ratio (PSRR)
-
-(Simulation plots available in the results section)
-
-📑 Performance Comparison
-Parameter	Original Work	This Work
-Technology (nm)	180	60
-No. of Transistors	14	14
-VDD (V)	0.6	0.6
-Gain (dB)	119	78
-CMRR (dB)	182	75
-PSRR (dB)	51	39
-Noise (nV/√Hz)	750	63.2
-
-
-
-
-🛠️ Tools Used
-
-Cadence Virtuoso
-
-Spectre Simulator
-
-65 nm CMOS PDK
-
-👤 Author
-
-Aditi Dhibar
-Analog / IC Design Enthusiast
-
+## Notes
+This project is intended for academic and learning purposes. The design and results are based on schematic-level simulations.
