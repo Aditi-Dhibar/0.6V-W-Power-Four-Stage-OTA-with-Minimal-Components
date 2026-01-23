@@ -86,11 +86,9 @@ Gain (dB)	119	78
 CMRR (dB)	182	75
 PSRR (dB)	51	39
 Noise (nV/√Hz)	750	63.2
-📚 Reference
 
-IEEE Paper:
-“0.6-V, μW-Power Four-Stage OTA With Minimal Components and 100× Load Range”
-https://ieeexplore.ieee.org/document/10707245
+
+
 
 🛠️ Tools Used
 
